@@ -205,6 +205,7 @@
           <ul class="section-our-team-list">
             <li class="section-our-team-item">
               <img
+                srcset="./images/Mark.jpg 1x, ./images/Mark@2x-min.jpg 2x"
                 src="./images/Mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -259,6 +260,7 @@
             </li>
             <li class="section-our-team-item">
               <img
+                srcset="./images/Tom.jpg 1x, ./images/Tom@2x-min.jpg 2x"
                 src="./images/Tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -313,6 +315,7 @@
             </li>
             <li class="section-our-team-item">
               <img
+                srcset="./images/Camilla.jpg 1x, ./images/Camilla@2x-min.jpg 2x"
                 src="./images/Camilla.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -367,6 +370,7 @@
             </li>
             <li class="section-our-team-item">
               <img
+                srcset="./images/Daniel.jpg 1x, ./images/Daniel@2x-min.jpg 2x"
                 src="./images/Daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -432,6 +436,10 @@
             <li class="section-portfolio-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/our-portfolio/img-5-min.jpg 1x,
+                    ./images/Banking@2x-min.jpg          2x
+                  "
                   src="./images/our-portfolio/img-5-min.jpg"
                   alt="Banking App"
                   width="360"
@@ -451,6 +459,10 @@
             <li class="section-portfolio-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/our-portfolio/img-4-min.jpg 1x,
+                    ./images/Cashless@2x-min.jpg         2x
+                  "
                   src="./images/our-portfolio/img-4-min.jpg"
                   alt="pay by phone"
                   width="360"
@@ -470,6 +482,7 @@
             <li class="section-portfolio-item">
               <div class="portfolio-box">
                 <img
+                  srcset="./images/our-portfolio/img-3-min.jpg, ./images/Meditation @2x-min.jpg 2x"
                   src="./images/our-portfolio/img-3-min.jpg"
                   alt="laptop and phone"
                   width="360"
@@ -490,6 +503,10 @@
             <li class="section-portfolio-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/our-portfolio/img-2-min.jpg 1x,
+                    ./images/Taxi@2x-min.jpg             2x
+                  "
                   src="./images/our-portfolio/img-2-min.jpg"
                   alt="taxi car"
                   width="360"
@@ -509,6 +526,10 @@
             <li class="section-portfolio-item">
               <div class="portfolio-box">
                 <img
+                  srcset="
+                    ./images/our-portfolio/img-1-min.jpg 1x,
+                    ./images/Screen@2x-min.jpg           2x
+                  "
                   src="./images/our-portfolio/img-1-min.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -530,6 +551,7 @@
             <li class="section-portfolio-item">
               <div class="portfolio-box">
                 <img
+                  srcset="./images/our-portfolio/img-min.jpg 1x, ./images/Online Courses@2x-min.jpg 2x"
                   src="./images/our-portfolio/img-min.jpg"
                   alt="a girl with a phone in glasses"
                   width="360"
@@ -631,7 +653,7 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div class="modal-overlay is-open hidden">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="button-close" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -713,8 +735,10 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="comment-link"> Privacy Policy</a>
+              <span class="checkbox-lable-text-span">
+                I accept the terms and conditions of the
+                <a href="" class="comment-link"> Privacy Policy</a>
+              </span>
             </label>
           </div>
 
