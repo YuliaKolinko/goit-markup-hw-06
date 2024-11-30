@@ -31,6 +31,7 @@ img {
 a {
   text-decoration: none;
   color: currentColor;
+  font-style: normal;
 }
 .container {
   max-width: 320px;
@@ -170,6 +171,13 @@ button {
     color: #434455;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media only screen and (min-width: 1158px) {
+    .contacts-link {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
   }
   .nav-link:hover,
   .nav-link:focus,
@@ -331,14 +339,24 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero.jpg);
+    url(../images/Heromobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   max-width: 767px;
   margin: auto;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Heromobile@2x.jpg);
+  }
+}
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding: 112px 0;
@@ -347,7 +365,19 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero.jpg), url(../images/Hero@2x-min.jpg);
+      url(../images/Herotablet.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Herotabel@2x.jpg);
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -355,6 +385,22 @@ button {
     padding: 188px 0;
 
     max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Hero@2x-min.jpg);
   }
 }
 .hero-section-title {
@@ -477,6 +523,13 @@ button {
     letter-spacing: 0.02em;
     color: #2e2f42;
   }
+}
+.section-about-paragraf {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 .icon-box {
   display: none;
@@ -705,15 +758,17 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .footer-conteiner {
-    padding: 96px 164px 96px 108px;
     margin: 0;
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
   }
+  .footer-conteiner {
+    padding: 0;
+  }
   .footer {
     justify-content: flex-start;
-    padding: 0;
+    padding: 96px 164px 96px 108px;
   }
   .logo-box {
     margin-right: 24px;
@@ -724,7 +779,9 @@ button {
     display: flex;
     margin: 0 auto;
     flex-wrap: nowrap;
-    padding: 100px 0;
+  }
+  .footer {
+    padding: 100px 159px 100px 156px;
   }
 }
 .footer-logo-accent {
@@ -766,6 +823,7 @@ button {
 @media only screen and (min-width: 1158px) {
   .logo-box {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 }
 .social-footer-container {
@@ -773,7 +831,11 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-
+@media only screen and (min-width: 1158px) {
+  .social-footer-container {
+    margin-right: 80px;
+  }
+}
 .social-paragraf,
 .footer-forms-paragraf {
   color: #fff;
@@ -837,14 +899,11 @@ button {
 }
 @media only screen and (min-width: 768px) {
   .footer-forms {
-    margin-right: auto;
   }
 }
 @media only screen and (min-width: 1158px) {
   .footer-forms {
     display: flex;
-
-    margin-left: 80px;
   }
 }
 .footer-input {
@@ -857,7 +916,7 @@ button {
   width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-bottom: 16px;
+
   color: #ffffff;
   opacity: 0.3;
 }
@@ -866,7 +925,6 @@ button {
   .footer-input {
     width: 264px;
     margin-bottom: 0;
-    margin-right: 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -902,6 +960,15 @@ button {
 @media only screen and (min-width: 768px) {
   .input-button-box {
     flex-direction: row;
+  }
+}
+.box-label {
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .box-label {
+    margin-bottom: 0;
+    margin-right: 24px;
   }
 }
 /* #endregion */
